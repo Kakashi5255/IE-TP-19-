@@ -9,3 +9,7 @@ app = FastAPI()
 
 app.include_router(car_ownership.router)
 app.include_router(parking.router)
+
+@app.get("/healthz")
+def health_check():
+    return {"status": "ok"}
