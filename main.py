@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from routers import car_ownership, parking
+from routers import car_ownership
 import models
 from db import engine
 
