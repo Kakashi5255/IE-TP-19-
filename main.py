@@ -8,7 +8,6 @@ models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
-# Enable CORS for all domains (change "*" to specific domains for production)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"], 
